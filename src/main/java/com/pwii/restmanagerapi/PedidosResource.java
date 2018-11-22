@@ -7,9 +7,7 @@ package com.pwii.restmanagerapi;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.pwii.dao.CardapioDAO;
 import com.pwii.dao.PedidosDAO;
-import com.pwii.entidades.Cardapio;
 import com.pwii.entidades.Pedidos;
 import java.util.ArrayList;
 import java.util.List;

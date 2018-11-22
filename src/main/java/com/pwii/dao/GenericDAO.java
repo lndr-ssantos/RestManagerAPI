@@ -25,6 +25,7 @@ public class GenericDAO<T extends GenericEntity> {
             }
             em.getTransaction().commit();
         } catch (Exception e) {
+            System.out.println("Error " + e);
         } finally {
             em.close();
         }

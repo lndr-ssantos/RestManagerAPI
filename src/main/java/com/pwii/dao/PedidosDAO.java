@@ -56,7 +56,7 @@ public class PedidosDAO extends GenericDAO {
         try {
             Query query = em.createQuery("UPDATE Pedidos p "
                     + "SET p.idItem = :idItem, p.pedidoData = :pedidoData, p.pedidoEnderecoCep = :pedidoEnderecoCep, p.pedidoEnderecoNumero = :pedidoEnderecoNumero, p.pedidoEnderecoBairro = :pedidoEnderecoBairro "
-                    + "WHERE c.id = :id");
+                    + "WHERE p.id = :id");
             query.setParameter("idItem", pedido.getIdItem());
             query.setParameter("pedidoData", pedido.getPedidoData());
             query.setParameter("pedidoEnderecoCep", pedido.getPedidoEnderecoCep());
@@ -69,6 +69,7 @@ public class PedidosDAO extends GenericDAO {
             em.getTransaction().commit();
 
         } catch (Exception e) {
+            System.out.println("Error " + e);
         }
     }
 }
