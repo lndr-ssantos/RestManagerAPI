@@ -6,8 +6,8 @@
         <property name="portNumber" value="3306"/>
         <property name="databaseName" value="restmanager_api"/>
         <property name="User" value="root"/>
-        <property name="Password" value="abc123"/>
-        <property name="URL" value="jdbc:mysql://localhost:3306/restmanager_api?zeroDateTimeBehavior=convertToNull"/>
+        <property name="Password" value="bJs7cSd8MQ"/>
+        <property name="URL" value="jdbc:mysql://node174684-restmanager.jelasticlw.com.br:3306/restmanager_api?zeroDateTimeBehavior=convertToNull"/>
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
     </jdbc-connection-pool>
     <jdbc-resource enabled="true" jndi-name="java:app/RestManagerAPI" object-type="user" pool-name="mysql_restmanager_api_rootPool"/>
@@ -17,7 +17,7 @@
         <property name="databaseName" value="restmanager"/>
         <property name="User" value="root"/>
         <property name="Password" value="abc123"/>
-        <property name="URL" value="jdbc:mysql://localhost:3306/restmanager?zeroDateTimeBehavior=convertToNull"/>
+        <property name="URL" value="jdbc:mysql://node174684-restmanager.jelasticlw.com.br:3306/restmanager?zeroDateTimeBehavior=convertToNull"/>
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
     </jdbc-connection-pool>
     <jdbc-resource enabled="true" jndi-name="java:app/RestManagerAPI_DB" object-type="user" pool-name="mysql_restmanager_rootPool"/>
